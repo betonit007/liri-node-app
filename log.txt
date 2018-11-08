@@ -1,0 +1,83 @@
+
+
+--------------------------------------
+concert-this 311
+--------------------------------------
+311 will be appearing at: 
+Riptide Music Festival in Fort Lauderdale, FL on 12/02/2018.
+KXTE X107.5's Holiday Havoc, Night 2 in Las Vegas, NV on 12/06/2018.
+
+--------------------------------------
+concert-this 311
+--------------------------------------
+311 will be appearing at: 
+Riptide Music Festival in Fort Lauderdale, FL on 12/02/2018.
+KXTE X107.5's Holiday Havoc, Night 2 in Las Vegas, NV on 12/06/2018.
+
+--------------------------------------
+movie-this tron
+--------------------------------------
+Title: TRON
+Year: 1982
+IMDB Rating: 6.8
+Rotten Tomatoes: 71%
+Country: USA
+Language: English
+Actors: Jeff Bridges, Bruce Boxleitner, David Warner, Cindy Morgan
+Plot: A computer hacker is abducted into the digital world and forced to participate in gladiatorial games where his only chance of escape is with the help of a heroic security program.
+
+--------------------------------------
+movie-this
+--------------------------------------
+Title: Mr. Nobody
+Year: 2009
+IMDB Rating: 7.9
+Rotten Tomatoes: 67%
+Country: Belgium, Germany, Canada, France, USA, UK
+Language: English, Mohawk
+Actors: Jared Leto, Sarah Polley, Diane Kruger, Linh Dan Pham
+Plot: A boy stands on a station platform as a train is about to leave. Should he go with his mother or stay with his father? Infinite possibilities arise from this decision. As long as he doesn't choose, anything is possible.
+
+--------------------------------------
+do-what-it-says
+--------------------------------------
+Justin Timberlake will be appearing at: 
+Rogers Arena in Vancouver, Canada on 11/08/2018.
+Rogers Arena in Vancouver, Canada on 11/09/2018.
+Tacoma Dome in Tacoma, WA on 11/12/2018.
+Tacoma Dome in Tacoma, WA on 11/13/2018.
+Moda Center in Portland, OR on 11/16/2018.
+Golden 1 Center in Sacramento, CA on 11/18/2018.
+Honda Center in Anaheim, CA on 11/20/2018.
+Staples Center in Los Angeles, CA on 11/27/2018.
+Talking Stick Resort Arena in Phoenix, AZ on 11/29/2018.
+T-Mobile Arena in Las Vegas, NV on 12/01/2018.
+Save Mart Center in Fresno, CA on 12/03/2018.
+Oracle Arena in Oakland, CA on 12/05/2018.
+CenturyLink Center Omaha in Omaha, NE on 12/08/2018.
+Sprint Center in Kansas City, MO on 12/10/2018.
+Scottrade Center in St Louis, MO on 12/13/2018.
+Bankers Life Fieldhouse in Indianapolis, IN on 12/14/2018.
+Wells Fargo Center in Philadelphia, PA on 12/17/2018.
+KeyBank Center in Buffalo, NY on 12/19/2018.
+Mohegan Sun Arena in Uncasville, CT on 12/21/2018.
+Mohegan Sun Arena in Uncasville, CT on 12/22/2018.
+Capital One Arena in Washington, DC on 01/04/2019.
+PNC Arena in Raleigh, NC on 01/06/2019.
+Spectrum Center in Charlotte, NC on 01/08/2019.
+Philips Arena in Atlanta, GA on 01/10/2019.
+FedExForum in Memphis, TN on 01/12/2019.
+Smoothie King Center in New Orleans, LA on 01/15/2019.
+Verizon Arena in North Little Rock, AR on 01/17/2019.
+AT&T Center in San Antonio, TX on 01/19/2019.
+Toyota Center in Houston, TX on 01/22/2019.
+American Airlines Center in Dallas, TX on 01/24/2019.
+Chesapeake Energy Arena in Oklahoma City, OK on 01/26/2019.
+Pepsi Center in Denver, CO on 01/28/2019.
+Madison Square Garden in New York, NY on 01/31/2019.
+Rogers Place in Edmonton, Canada on 02/06/2019.
+Rogers Place in Edmonton, Canada on 02/07/2019.
+Tacoma Dome in Tacoma, WA on 02/10/2019.
+Tacoma Dome in Tacoma, WA on 02/11/2019.
+Rogers Arena in Vancouver, Canada on 02/14/2019.
+Rogers Arena in Vancouver, Canada on 02/15/2019.

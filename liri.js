@@ -8,11 +8,14 @@ var moment = require('moment');
 var Spotify = require('node-spotify-api');
 var spotify = new Spotify(keys.spotify);
 var fs = require('fs');
-
-
+////get input//////////////
 var mode = process.argv[2];
-
 var input = process.argv.slice(3).join(" ");
+////log input//////////////
+log("\r\n--------------------------------------\r")
+log(process.argv.slice(2).join(" "));
+log("--------------------------------------\r")
+
 
 if (mode === 'concert-this') {
   
@@ -66,16 +69,19 @@ function concert() {
 
                 if (res[0]) {
                     console.log("\n" + res[i].lineup[0] + " will be appearing at: ");
+                    log(("\r" + res[i].lineup[0] + " will be appearing at: "));
                     while (res[i]) {
 
                         var venueDate = moment(res[i].datetime).format('MM/DD/YYYY');
 
                         if (res[i].venue.region === '') {
                         console.log("\n"  + res[i].venue.name + " in " + res[i].venue.city + ", " + res[i].venue.country + " on " + venueDate + ".");
+                        log("\r"  + res[i].venue.name + " in " + res[i].venue.city + ", " + res[i].venue.country + " on " + venueDate + ".");
                         
                         }
                         else {
                         console.log("\n" +  res[i].venue.name + " in " + res[i].venue.city + ", " + res[i].venue.region + " on " + venueDate + ".");
+                        log("\r" +  res[i].venue.name + " in " + res[i].venue.city + ", " + res[i].venue.region + " on " + venueDate + ".");
                     
                         }
                         i++;
@@ -83,6 +89,7 @@ function concert() {
                 }
                 else {
                     console.log("\nNo results found for " + input + ", please revise your search and try again.");
+                    log("\rNo results found for " + input + ", please revise your search and try again.");
                 }
         }
 
@@ -98,18 +105,24 @@ function concert() {
       .search({type: 'track', query: input })
       .then (function(response) {
           if (response.tracks.items.length === 0) {
-              console.log("\nSorry, no results found. Please revise your search.")
+              console.log("\nSorry, no results found. Please revise your search.");
+              log("\r\n\r\nSorry, no results found. Please revise your search.");
           }
           else {
               console.log("\nArtist: " + response.tracks.items[0].artists[0].name);
-              console.log("\nSong Name: " + response.tracks.items[0].name)
+              log("\r\n\r\nArtist: " + response.tracks.items[0].artists[0].name);
+              console.log("\nSong Name: " + response.tracks.items[0].name);
+              log("\n\rSong Name: " + response.tracks.items[0].name);
               if (response.tracks.items[0].preview_url) {
               console.log("\nPreview Link: " + response.tracks.items[0].preview_url);
+              log("\r\nPreview Link: " + response.tracks.items[0].preview_url);
               }
               else {
                   console.log("\nPreview Link: Not Available.");
+                  log("\n\rPreview Link: Not Available.");
               }
               console.log("\nAlbum: " + response.tracks.items[0].album.name);
+              log("\r\nAlbum: " + response.tracks.items[0].album.name);
           }
       })
       .catch(function(err) {
@@ -126,6 +139,7 @@ function concert() {
         //console.log((JSON.parse(body).Response)); //Valid response or not
          if(JSON.parse(body).Response === 'False') {
              console.log("\nSorry, no results found. Please revise your search.");
+             log("\n\rSorry, no results found. Please revise your search.");
          }     
 
          else if(!error && response.statusCode === 200) {
@@ -137,7 +151,24 @@ function concert() {
             console.log("Language: " + JSON.parse(body).Language);
             console.log("Actors: " + JSON.parse(body).Actors);
             console.log("\nPlot: " + JSON.parse(body).Plot);
+
+            log("\rTitle: " + JSON.parse(body).Title);
+            log("\rYear: " + JSON.parse(body).Year);
+            log("\rIMDB Rating: " + JSON.parse(body).imdbRating);
+            log("\rRotten Tomatoes: " + JSON.parse(body).Ratings[1].Value);
+            log("\rCountry: " + JSON.parse(body).Country);
+            log("\rLanguage: " + JSON.parse(body).Language);
+            log("\rActors: " + JSON.parse(body).Actors);
+            log("\rPlot: " + JSON.parse(body).Plot);
+            
             
         }
     });
+ }
+
+ function log(info) {
+     fs.appendFile('log.txt', info + "\r\n", function(err) {
+         if(err) throw err;
+
+     });
  }
